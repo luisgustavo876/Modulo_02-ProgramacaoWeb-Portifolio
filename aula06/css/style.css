@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #6366f1;
+  --cor-fundo: #f8f9fa;
+  --cor-texto: #333;
+  --cor-tabela-par: #e9ecef;
+  --espaco: 16px;
+  --fonte: 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: var(--fonte);
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-right: 2rem;
+  padding: 8px 12px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+h1 {
+  color: var(--cor-primaria);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+figure {
+  margin: 1rem 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+figure::after {
+  content: "★";
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+}
+
+img {
+  border-radius: 8px;
+  display: block;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th, table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--cor-tabela-par);
+}
+
+ul {
+  margin-left: 2rem;
+  margin: 1rem 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 2rem 20px;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
